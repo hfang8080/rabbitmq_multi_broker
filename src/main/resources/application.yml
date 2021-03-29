@@ -1,0 +1,18 @@
+
+
+rabbitmq:
+  first:
+    vhost: ai-beta
+    username: ai-beta
+    password: z5CqUV9ptzJYyFiv
+    port: 5672
+    host: dev.rabbitmq.saybot.net
+  second:
+    vhost: teacher-backend-beta
+    username: teacher-backend-beta
+    password: fW5rHeT42CjjRGTC
+    port: 5672
+    host: dev.rabbitmq.saybot.net
+spring:
+  main:
+    web-application-type: none
