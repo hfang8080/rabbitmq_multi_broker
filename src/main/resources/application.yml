@@ -1,5 +1,4 @@
 
-
 rabbitmq:
   first:
     vhost: ai-beta
@@ -15,4 +14,14 @@ rabbitmq:
     host: dev.rabbitmq.saybot.net
 spring:
   main:
-    web-application-type: none
+    web-application-type: servlet
+  rabbitmq:
+    listener:
+      simple:
+        acknowledge-mode: auto
+        default-requeue-rejected: false
+        retry:
+          enabled: true
+          max-attempts: 2
+server:
+  port: 8888
